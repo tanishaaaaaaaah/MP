@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-title> AllureArt Museum </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,5 +11,66 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-datetime class="calendar"></ion-datetime>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-accordion-group expand="inset">
+        <ion-accordion value="first">
+          <ion-item slot="header" color="rose">
+            <ion-label>First Week</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            05-04-2023: Exhibition On Paintings
+          </div>
+          <div class="ion-padding" slot="content">
+            07-04-2023: Exhibition On 3D Arts
+          </div>
+        </ion-accordion>
+
+        <ion-accordion value="second">
+          <ion-item slot="header" color="rose">
+            <ion-label>Second Week</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            12-04-2023: Van Gogh's Exhibition
+          </div>
+          <div class="ion-padding" slot="content">
+            16-04-2023: The Da Vinci Era
+          </div>
+          <div class="ion-padding" slot="content">
+            17-04-2023: Michelangelo Magic
+          </div>
+          <div class="ion-padding" slot="content">18-04-2023: Dali Ciao</div>
+        </ion-accordion>
+
+        <ion-accordion value="third">
+          <ion-item slot="header" color="rose">
+            <ion-label>Third Week</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            23-04-2023: Tribute Pablo Picasso
+          </div>
+        </ion-accordion>
+
+        <ion-accordion value="fourth">
+          <ion-item slot="header" color="rose">
+            <ion-label>Fourth Week</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            30-04-2023: Tribute To Jamini Roy
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-card-content>
+  </ion-card>
+
+  
 </ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title>
+      Visit us @AllureArt.com
+    </ion-title>
+  </ion-toolbar>

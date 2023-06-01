@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title> AllureArt Museum </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,5 +11,105 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <img class="logo" alt="museum" src="./assets/icon/art.jpg" />
+      <ion-card-title class="main_welcome">Welcome!</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content> </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" (click)="scrollToBottom()"
+    >Scroll to Bottom</ion-button
+  >
+
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-card color="medium">
+        <img
+          alt="Starry Night"
+          src="https://www.re-thinkingthefuture.com/wp-content/uploads/2022/07/A7290-Art-Movement-Modern-art.jpg"
+        />
+        <ion-card-header>
+          <ion-card-title>Starry Night</ion-card-title>
+          <ion-card-subtitle>Artist: Van Gogh</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          It depicts the view from the east-facing window of his asylum room at
+          Saint-Rémy-de-Provence, just before sunrise, with the addition of an
+          imaginary village.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    <!--next item-->
+    <ion-item>
+      <ion-card color="primary">
+        <img
+          alt="Scenary"
+          src="https://s.studiobinder.com/wp-content/uploads/2023/01/What-is-Modern-Art-Andre-Derains-The-Turning-Road-LEstaque-1906.png"
+        />
+        <ion-card-header>
+          <ion-card-title>Abstract Park</ion-card-title>
+          <ion-card-subtitle>Artist: Franz Kline</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          The natural world has always been a source of wonder and abstract
+          landscapes offer a new way to see it.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    <!--next item-->
+    <ion-item>
+      <ion-card color="warning">
+        <img
+          alt="Scream"
+          src="https://www.theartist.me/wp-content/uploads/2021/05/the-scream-by-edvard-munch-a-critical-analysis.jpg"
+        />
+        <ion-card-header>
+          <ion-card-title>The Scream</ion-card-title>
+          <ion-card-subtitle>Artist: Edvard Munch</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          Represents anxiety — a common human condition, which then went on to
+          influence the Expressionist movement.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    <!--next item-->
+    <ion-item>
+      <ion-card color="success">
+        <img
+          alt="abstract"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBSgCqJkhfg3KMUFSai_t8i_grX0mBTi5r0w&usqp=CAU"
+        />
+        <ion-card-header>
+          <ion-card-title>Flowers</ion-card-title>
+          <ion-card-subtitle>Artist: Claude Monet</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          A multitude of emotions and feelings: from love, passion and desire to
+          purity, innocence or even death.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    <!--next item-->
+    <ion-item>
+      <ion-card color="danger">
+        <img
+          alt="ring around"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcOc4UnW6SE8dv9GjG8mxhPBh-32G3-F0HeA&usqp=CAU"
+        />
+        <ion-card-header>
+          <ion-card-title>Ring Around!</ion-card-title>
+          <ion-card-subtitle>Artist: Wassily Kandinsky</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          Ideas around progress, regeneration and renewal.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" (click)="scrollToTop()">Scroll to Top</ion-button>
 </ion-content>

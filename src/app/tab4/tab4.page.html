@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>AllureArt Museum</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item class="feedbackForm">
+    <!-- <ion-label>Feedback</ion-label> -->
+    <ion-textarea
+      [(ngModel)]="feedbackText"
+      placeholder="Enter your feedback"></ion-textarea>
+    <!--ngModel Binds html datawith ts-->
+  </ion-item>
+  <ion-button expand="block" (click)="showAlert()">Submit</ion-button>
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title> Visit us @AllureArt.com </ion-title>
+  </ion-toolbar>
+</ion-footer>
